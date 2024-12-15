@@ -22,3 +22,14 @@ void drawArrayOrdered (int v[], int size, int screenHeight)
         EndDrawing();
     }
 }
+
+
+void drawIteration (int v[], int size, int screenHeight, int i, int j, Color color) 
+{
+    BeginDrawing();
+        ClearBackground(BLACK);
+        drawArray(v, size, screenHeight, WHITE);
+        DrawRectangle(2 * j, screenHeight - v[j], 2, v[j], color);
+        DrawRectangle(2 * i, screenHeight - v[i], 2, v[i], color);
+    EndDrawing();
+}

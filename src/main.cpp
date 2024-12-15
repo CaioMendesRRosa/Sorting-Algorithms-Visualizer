@@ -29,7 +29,7 @@ int main(void)
 
     InitWindow(screenWidth, 1080, "Sorting Algorithms Visualizer");
     ToggleFullscreen();
-    SetTargetFPS(10000);
+    SetTargetFPS(500);
 
     while (!WindowShouldClose())
     {
@@ -40,7 +40,7 @@ int main(void)
 
         std::this_thread::sleep_for(std::chrono::milliseconds(1000));
 
-        if (selectionSort(v, size, screenHeight) == -1)
+        if (quickSort(v, 0, size - 1, size, screenHeight) == -1)
         {
             break;
         }
