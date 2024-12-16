@@ -10,6 +10,6 @@ include_directories(${PROJECT_SOURCE_DIR}/include)
 link_directories(${PROJECT_SOURCE_DIR}/lib)
 
 
-add_executable(sortView src/main.cpp src/draw.cpp src/SortingAlgorithms/selectionSort.cpp src/SortingAlgorithms/quickSort.cpp)
+add_executable(sortView src/main.cpp src/draw.cpp src/SortingAlgorithms/selectionSort.cpp src/SortingAlgorithms/quickSort.cpp src/SortingAlgorithms/mergeSort.cpp)
 
 target_link_libraries(sortView raylib opengl32 gdi32 winmm)

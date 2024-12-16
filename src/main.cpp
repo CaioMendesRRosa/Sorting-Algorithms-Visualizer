@@ -27,9 +27,9 @@ int main(void)
 
     std::shuffle (v, v + size, urng);
 
-    InitWindow(screenWidth, 1080, "Sorting Algorithms Visualizer");
+    InitWindow(screenWidth, screenHeight, "Sorting Algorithms Visualizer");
     ToggleFullscreen();
-    SetTargetFPS(500);
+    SetTargetFPS(300);
 
     while (!WindowShouldClose())
     {
@@ -40,8 +40,8 @@ int main(void)
 
         std::this_thread::sleep_for(std::chrono::milliseconds(1000));
 
-
-        if (quickSort(v, 0, size - 1, size, screenHeight) == -1)
+        
+        if (mergeSort(v, 0, size - 1, size, screenHeight) == -1)
         {
             break;
         }

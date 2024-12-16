@@ -30,7 +30,7 @@ int partition(int v[], int begin, int end, int size, int screenHeight)
 
         if (IsKeyPressed(KEY_ESCAPE)) 
         {
-                return -1;
+            return -1;
         }
 
         // Draw comparisons value in Red

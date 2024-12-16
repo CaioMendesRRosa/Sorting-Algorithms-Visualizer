@@ -6,7 +6,7 @@ void drawArray (int v[], int size, int screenHeight, Color color)
 {
     for (int i = 0; i < size; i++) 
     {
-        DrawRectangle(2*i, screenHeight - v[i], 2, v[i], color);
+        DrawRectangle(widthPlot * i, screenHeight - v[i], widthPlot, v[i], color);
     }
 }
 
@@ -29,7 +29,7 @@ void drawIteration (int v[], int size, int screenHeight, int i, int j, Color col
     BeginDrawing();
         ClearBackground(BLACK);
         drawArray(v, size, screenHeight, WHITE);
-        DrawRectangle(2 * j, screenHeight - v[j], 2, v[j], color);
-        DrawRectangle(2 * i, screenHeight - v[i], 2, v[i], color);
+        DrawRectangle(widthPlot * j, screenHeight - v[j], widthPlot, v[j], color);
+        DrawRectangle(widthPlot * i, screenHeight - v[i], widthPlot, v[i], color);
     EndDrawing();
 }
