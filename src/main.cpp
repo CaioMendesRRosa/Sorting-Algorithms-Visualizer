@@ -40,10 +40,18 @@ int main(void)
 
         std::this_thread::sleep_for(std::chrono::milliseconds(1000));
 
+
         if (quickSort(v, 0, size - 1, size, screenHeight) == -1)
         {
             break;
         }
+
+        /*
+        if (selectionSort(v, size, screenHeight) == -1)
+        {
+            break;
+        }
+        */
 
         drawArrayOrdered(v, size, screenHeight);
 

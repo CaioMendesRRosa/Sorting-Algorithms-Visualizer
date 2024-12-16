@@ -9,6 +9,7 @@
 int partition(int v[], int begin, int end, int size, int screenHeight) 
 {
     int pivot, pos = begin + ( rand() % (end - begin + 1) );
+    int pivotPos = pos;
  
     std::swap(v[begin], v[pos]);
 
@@ -33,7 +34,7 @@ int partition(int v[], int begin, int end, int size, int screenHeight)
         }
 
         // Draw comparisons value in Red
-        drawIteration (v, size, screenHeight, begin, i, RED);
+        drawIteration (v, size, screenHeight, pivotPos, i, RED);
 
     }
 
