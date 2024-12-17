@@ -32,5 +32,5 @@ int selectionSort (int v[], int size, int screenHeight)
         drawIteration (v, size, screenHeight, i, lowestIndex, GREEN);
     }
 
-    return 1;
+    return 0;
 }

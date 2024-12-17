@@ -4,7 +4,7 @@
 
 void drawArray (int v[], int size, int screenHeight, Color color) 
 {
-    for (int i = 0; i < size; i++) 
+    for (int i = 0; i <= size; i++) 
     {
         DrawRectangle(widthPlot * i, screenHeight - v[i], widthPlot, v[i], color);
     }
@@ -13,7 +13,7 @@ void drawArray (int v[], int size, int screenHeight, Color color)
 
 void drawArrayOrdered (int v[], int size, int screenHeight) 
 {
-    for (int i = 0; i < size; i++) 
+    for (int i = 0; i <= size; i++) 
     {
         BeginDrawing();
             ClearBackground(BLACK);

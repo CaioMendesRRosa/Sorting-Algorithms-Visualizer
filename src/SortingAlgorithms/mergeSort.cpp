@@ -70,7 +70,7 @@ int merge (int v[], int begin, int end, int size, int screenHeight)
 
     free(newArray);
 
-    return 1;
+    return 0;
 }
 
 
@@ -96,5 +96,5 @@ int mergeSort (int v[], int begin, int end, int size, int screenHeight)
         }
     }
 
-    return 1;
+    return 0;
 }
