@@ -23,13 +23,11 @@ int selectionSort (int v[], int size, int screenHeight)
                 return -1;
             }
 
-            // Draw comparisons value in Red
             drawIteration (v, size, screenHeight, i, j, RED);
         }
         std::swap(v[i], v[lowestIndex]);
 
-        // Draw swaps values in Green
-        drawIteration (v, size, screenHeight, i, lowestIndex, GREEN);
+        drawIteration (v, size, screenHeight, i, lowestIndex, RED);
     }
 
     return 0;

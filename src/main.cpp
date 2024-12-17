@@ -32,7 +32,7 @@ int main(void)
 
     while (!shouldExit)
     {
-        std::cout << "Choose one of the following algorithms\n0 - Exit\n1 - Selection Sort\n2 - Merge Sort\n3 - Quick Sort\n";
+        std::cout << "Choose one of the following algorithms\n0 - Exit\n1 - Selection Sort\n2 - Merge Sort\n3 - Quick Sort\n4 - Bubble Sort\n";
 
         std::cin >> option;
 
@@ -41,7 +41,7 @@ int main(void)
             break;
         }
 
-        if (option < 0 || option > 3)
+        if (option < 0 || option > 4)
         {
             std::cout << "Invalid option\n";
             break;
@@ -80,6 +80,11 @@ int main(void)
         case 3:
             SetTargetFPS(300);
             shouldExit = quickSort(v, 0, size - 1, size, screenHeight);
+            break;
+
+        case 4:
+            SetTargetFPS(30000);
+            shouldExit = bubbleSort(v, size, screenHeight);
             break;
 
         default:
