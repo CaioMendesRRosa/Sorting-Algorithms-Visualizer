@@ -13,3 +13,6 @@ int bubbleSort (int v[], int size, int screenHeight);
 
 
 int insertionSort (int v[], int size, int screenHeight);
+
+
+int countingSort (int v[], int size, int screenHeight);

@@ -2,7 +2,6 @@
 #include "../../include/draw.hpp"
 #include "../../include/sortingAlgorithms.hpp"
 #include <algorithm>
-#include <iostream>
 
 
 int insertionSort (int v[], int size, int screenHeight)
