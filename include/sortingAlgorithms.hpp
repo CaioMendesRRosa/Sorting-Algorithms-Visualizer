@@ -16,3 +16,8 @@ int insertionSort (int v[], int size, int screenHeight);
 
 
 int countingSort (int v[], int size, int screenHeight);
+
+
+int heapify (int v[], int index, int size, int screenHeight, int maxSize);
+int buildMaxHeap (int v[], int size, int screenHeight);
+int heapSort (int v[], int size, int screenHeight);

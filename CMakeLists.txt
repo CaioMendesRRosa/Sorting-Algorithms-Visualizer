@@ -11,6 +11,10 @@ link_directories(${PROJECT_SOURCE_DIR}/lib)
 
 
 add_executable(sortView src/main.cpp src/draw.cpp src/SortingAlgorithms/selectionSort.cpp src/SortingAlgorithms/quickSort.cpp src/SortingAlgorithms/mergeSort.cpp 
-src/SortingAlgorithms/bubbleSort.cpp src/SortingAlgorithms/insertionSort.cpp src/SortingAlgorithms/countingSort.cpp)
+src/SortingAlgorithms/bubbleSort.cpp src/SortingAlgorithms/insertionSort.cpp src/SortingAlgorithms/countingSort.cpp src/SortingAlgorithms/heapSort.cpp)
 
-target_link_libraries(sortView raylib opengl32 gdi32 winmm)
+if (WIN32)
+    target_link_libraries(sortView raylib opengl32 gdi32 winmm)
+elseif (UNIX)
+    target_link_libraries(sortView raylib GL m pthread dl rt X11)
+endif()
